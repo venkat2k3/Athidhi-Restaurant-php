@@ -1,0 +1,8 @@
+CREATE DATABASE User_Data;
+USE User_Data;
+
+CREATE TABLE UsersDetailt (
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    contact INT AUTO_INCREMENT PRIMARY KEY,
+);

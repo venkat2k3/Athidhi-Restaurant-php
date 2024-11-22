@@ -246,9 +246,6 @@ body {
     </ul>
 </nav>
 
-
-
-
     <div class="home"
     style="
     background-image: url('./public/images/background.jpg');
@@ -302,7 +299,7 @@ body {
                             type="time"
                             id="time"
                             name="time"
-                            min="<?php echo date('H:i'); ?>"
+                            min="<?php echo date('00:00'); ?>"
                             required
                         />
                     </div>
@@ -313,7 +310,7 @@ body {
                             type="number"
                             id="guests"
                             name="guests"
-                            min="1"
+                            min=1
                             required
                         />
                     </div>
@@ -324,13 +321,13 @@ body {
                             type="number"
                             id="tableno"
                             name="tableno"
-                            min="1"
-                            max="10"
+                            min=1
+                            max=10
                             required
                         />
         </div>
         </div>
-                <button type="submit" class="confirm">Confirm Reservation</button>
+                <a href="Menu.php"><button type="submit" class="confirm">Confirm Reservation</button></a>
                 <button type="button" class="cancel" onclick="toggleReservation()">Cancel</button>
             </form>
         </div>
